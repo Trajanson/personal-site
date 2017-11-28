@@ -2,6 +2,7 @@
   "compilerOptions": {
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
+    "baseUrl": "src",
     "forceConsistentCasingInFileNames": true,
     "jsx": "react",
     "lib": ["es6", "dom"],
@@ -24,7 +25,7 @@
     "jest",
     "node_modules",
     "scripts",
-    "src/setupTests.ts"
-    "webpack",
+    "src/setupTests.ts",
+    "webpack"
   ]
 }
