@@ -1,9 +1,9 @@
 // import React from 'react';
 // import { mount } from 'enzyme';
 
-// import HeaderMainMenu from '..';
+// import HeaderNavMenu from '..';
 
-describe('<HeaderMainMenu />', () => {
+describe('<HeaderNavMenu />', () => {
   it('Expect to have unit tests specified', () => {
     expect(true).toEqual(false);
   });
