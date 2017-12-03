@@ -1,0 +1,17 @@
+import React from 'react';
+import { storiesOf } from '@storybook/react';
+import styled from 'styled-components';
+
+import {{ properCase name }} from '.';
+
+const stories = storiesOf('{{ properCase name }}', module);
+
+const Wrapper = styled.div`
+  width: 100%;
+`;
+
+stories.add('{{ properCase name }}', () => (
+  <Wrapper>
+    <{{ properCase name }} />
+  </Wrapper>
+));

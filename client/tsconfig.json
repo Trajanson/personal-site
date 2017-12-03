@@ -22,6 +22,7 @@
   "exclude": [
     "acceptance-tests",
     "build",
+    "internals",
     "jest",
     "node_modules",
     "scripts",

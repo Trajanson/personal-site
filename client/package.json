@@ -3,8 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@storybook/addon-storyshots": "^3.2.16",
-    "@types/react-test-renderer": "^16.0.0",
     "autoprefixer": "7.1.2",
     "awesome-typescript-loader": "^3.4.0",
     "case-sensitive-paths-webpack-plugin": "2.1.1",
@@ -23,9 +21,11 @@
     "react": "^16.1.1",
     "react-dev-utils": "^4.0.1",
     "react-dom": "^16.1.1",
+    "react-loadable": "^5.3.1",
     "react-test-renderer": "^16.1.1",
     "source-map-loader": "^0.2.1",
     "style-loader": "0.18.2",
+    "styled-components": "^2.2.3",
     "sw-precache-webpack-plugin": "0.11.4",
     "ts-jest": "^20.0.14",
     "ts-loader": "^2.3.7",
@@ -40,20 +40,24 @@
     "whatwg-fetch": "2.0.3"
   },
   "scripts": {
-    "start": "node internals/scripts/start.js",
     "build": "node internals/scripts/build.js",
-    "test": "node internals/scripts/test.js --env=jsdom",
-    "storybook": "start-storybook -p 9001 -c internals/storybook"
+    "generate": "plop --plopfile internals/generators/index.js",
+    "start": "node internals/scripts/start.js",
+    "storybook": "start-storybook -p 9001 -c internals/storybook",
+    "test": "node internals/scripts/test.js --env=jsdom"
   },
   "devDependencies": {
     "@storybook/addon-actions": "^3.2.16",
     "@storybook/addon-links": "^3.2.16",
+    "@storybook/addon-storyshots": "^3.2.16",
     "@storybook/react": "^3.2.16",
+    "@types/enzyme": "^3.1.5",
     "@types/jest": "^21.1.8",
     "@types/node": "^8.0.53",
-    "@types/react": "^16.0.25",
     "@types/react-dom": "^16.0.3",
     "@types/react-helmet": "^5.0.3",
+    "@types/react-test-renderer": "^16.0.0",
+    "@types/react": "^16.0.25",
     "@types/redux-actions": "^2.2.3",
     "@types/storybook__addon-actions": "^3.0.1",
     "@types/storybook__addon-info": "^3.2.1",
@@ -61,8 +65,12 @@
     "@types/storybook__addon-links": "^3.0.2",
     "@types/storybook__addon-notes": "^3.0.1",
     "@types/storybook__react": "^3.0.5",
+    "@types/webpack-env": "^1.13.2",
     "@types/webpack": "^3.8.1",
-    "@types/webpack-env": "^1.13.2"
+    "enzyme-adapter-react-16": "^1.1.0",
+    "enzyme-to-json": "^3.2.2",
+    "enzyme": "^3.2.0",
+    "plop": "^1.9.0"
   },
   "jest": {
     "mapCoverage": true,
